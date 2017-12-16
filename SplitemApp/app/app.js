@@ -25,10 +25,26 @@ const SplitemApp = TabNavigator({
   tabBarPosition: 'bottom',
   swipeEnable: true,
   tabBarOptions: {
-    activeTintColor: 'white',
-    activeBackgroundColor: 'darkgreen',
-    //headerStyle: navigatorStyles.header,
-  },
+    indicatorStyle: {
+          backgroundColor: 'green',
+          height: 45
+      },
+      activeTintColor: 'white',
+      pressColor: 'white',
+      style: {
+        backgroundColor: 'darkgreen',
+        height: 45,
+      }
+    /*
+    labelStyle: {
+      fontSize: 18,
+    },
+    style: {
+
+      backgroundColor: 'darkgreen',
+    },
+    */
+  }
 });
 
 const App = () => {

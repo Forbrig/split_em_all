@@ -14,21 +14,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 * After you have set your development kit, you may install some components that aren't downloaded default from react-native.
 
-* Download _tabNavigation_
-
-Some times to make it work you will need to remove npm and install it again on source folder (_split_em_all/SplitemApp_) type:
+* Install _tabNavigation_ on source folder (_split_em_all/SplitemApp_):
 
 ```
-$ npm remove
-$ npm install
 $ npm install --save react-navigation
 ```
 
 #### Android Virtual Machine
 
-With your VM running.
+**PS: [_ATOM_](https://atom.io/) seems to lock the project files not allowing [_NodeJS_](https://nodejs.org) to work properly so make sure to have it closed before you run the next command.**
 
-Javascript server:
+After you have your VM running from android-studio AVD Manager start the Javascript server:
+
 ```
 $ npm start
 ```
@@ -37,6 +34,7 @@ Load the app on VM:
 ```
 $ react-native run-android
 ```
+
 ## Android APK
 
 **in progress**

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
+  TextInput,
   View,
   Button,
   Alert,
@@ -14,12 +15,25 @@ export default class Login extends Component<{}> {
   render() {
     return (
       <View style = {styles.backgroundLogin}>
-        <View style = {styles.buttonLoginContainer}>
-          <Button
-            title = "Login"
-            onPress={this._onPressButton}
-            //color = 'grey'
+        <View style = {styles.loginContainer}>
+          <TextInput
+            style = {styles.inputBox}
+            placeholder = "Login"
+            //onChangeText={(text) => this.setState({text})}
+          />
+          <TextInput
+            style = {styles.inputBox}
+            placeholder = "Password"
+            //onChangeText={(text) => this.setState({text})}
+          />
+          <View style = {styles.buttonLogin}>
+            <Button
+              underlineColorAndroid='transparent'
+              title = "Login"
+              color = 'darkgreen'
+              onPress = {this._onPressButton}
             />
+          </View>
         </View>
       </View>
     );
@@ -32,9 +46,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'green',
   },
-  buttonLoginContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+  loginContainer: {
+    marginTop: 300,
+    width: 300,
+    justifyContent: 'space-between',
+  },
+  inputBox: {
+    backgroundColor: 'white',
+    borderRadius: 1,
+
+  },
+  buttonLogin: {
+    marginTop: 20,
+    height: 40,
+    width: 300,
+    borderRadius: 4,
+    borderWidth: 0.8,
+    //borderColor: '#d6d7da',
   },
 });

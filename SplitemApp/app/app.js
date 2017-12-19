@@ -8,7 +8,6 @@ import {
  //path for the screens wich will be used in tabNavigator (I fucking love tabNavigator)
 import Login from './screens/login.js' ;
 import Home from './screens/home.js' ;
-//import 'Name' from 'path';
 
 //stylishing the tab navigator
 const navigatorStyles = StyleSheet.create({
@@ -26,24 +25,15 @@ const SplitemApp = TabNavigator({
   swipeEnable: true,
   tabBarOptions: {
     indicatorStyle: {
-          backgroundColor: 'green',
-          height: 45
-      },
-      activeTintColor: 'white',
-      pressColor: 'white',
-      style: {
-        backgroundColor: 'darkgreen',
-        height: 45,
-      }
-    /*
-    labelStyle: {
-      fontSize: 18,
+      backgroundColor: 'red',
+      height: 45
     },
+    activeTintColor: 'white',
+    pressColor: 'white',
     style: {
-
-      backgroundColor: 'darkgreen',
-    },
-    */
+      backgroundColor: '#a51d0d',
+      height: 45,
+    }
   }
 });
 

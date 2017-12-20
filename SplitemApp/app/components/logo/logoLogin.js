@@ -6,14 +6,16 @@ import {
 	Image,
 } from 'react-native';
 
-//import logoImage from '../images/logo.png';
+import logoImage from '../../images/logo.png';
 
 export default class LogoLogin extends Component {
 	render() {
 		return (
-			<View style={styles.container}>
-				//<Image source={logoImage} style={styles.image} />
-				<Text style={styles.text}>Split em All</Text>
+			<View style = {styles.container}>
+				<Image source= {logoImage} style = {styles.image} />
+				<Text style = {styles.text}>
+					Split em All
+				</Text>
 			</View>
 		);
 	}
@@ -21,18 +23,17 @@ export default class LogoLogin extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 3,
+		marginTop: 50,
 		alignItems: 'center',
-		justifyContent: 'center',
 	},
 	image: {
-		width: 80,
-		height: 80,
+		width: 300,
+		height: 300,
 	},
 	text: {
 		color: 'white',
 		fontWeight: 'bold',
 		backgroundColor: 'transparent',
-		marginTop: 20,
+		marginTop: 10,
 	}
 });

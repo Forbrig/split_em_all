@@ -1,3 +1,5 @@
+//note that default button has few layout options, for more options search for touchableOpacity
+
 import React, { Component} from 'react';
 import {
 	StyleSheet,
@@ -26,6 +28,7 @@ export default class buttonLogin extends Component {
 
 const styles = StyleSheet.create({
   buttonLogin: {
+		width: 300,
     marginTop: 20,
     height: 40,
     borderRadius: 4,

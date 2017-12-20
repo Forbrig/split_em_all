@@ -17,6 +17,7 @@ export default class inputLogin extends Component {
   }
 	render() {
 		return (
+			//<KeyboardAvoidingView/> dont work properly with tabNavigator, a RN problem not fixed till today (20/12/2017)
 			<KeyboardAvoidingView
 			behavior={'padding'}
 			style = {styles.inputContainer}
@@ -48,10 +49,13 @@ const styles = StyleSheet.create({
   inputBox: {
     marginTop: 5,
 		height: 40,
+		fontWeight: 'bold',
     backgroundColor: 'white',
     borderRadius: 1,
   },
+	//this margin is between marginBottom of logoLogin container and first inputBox
 	inputContainer: {
-		marginTop: 400,
+		width: 300,
+		marginTop: 50,
 	}
 });

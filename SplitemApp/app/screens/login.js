@@ -20,10 +20,9 @@ export default class Login extends Component {
   render() {
     return (
       <View style = {styles.backgroundLogin}>
-        <View style = {styles.boxLogin}>
-          <InputLogin />
-          <ButtonLogin />
-        </View>
+        <LogoLogin />
+        <InputLogin />
+        <ButtonLogin />
       </View>
     );
   }
@@ -35,8 +34,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#1b1f26',
   },
-
-  boxLogin: {
-    width: 300,
-  }
 });

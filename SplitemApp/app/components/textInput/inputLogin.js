@@ -12,7 +12,7 @@ import {
 export default class inputLogin extends Component {
 	constructor(props) {
     super(props);
-    this.state = {login: ''};
+    this.state = {username: ''};
 		this.state = {password: ''};
   }
 	render() {
@@ -27,9 +27,10 @@ export default class inputLogin extends Component {
 					//returnKeyType = "next"
           style = {styles.inputBox}
           placeholder = "Login"
-					onChangeText={(login) => this.setState({login})}
+					onChangeText={(username) => this.setState({username})}
 					onSubmitEditing = {() => this.passwordInput.focus()} //focus on next label (password)
 					autoCapitalize = "none"
+					autoCorrect = {false}
         />
 				<TextInput
 					underlineColorAndroid = 'transparent'

@@ -9,32 +9,27 @@ import {
 import Login from './screens/login.js' ;
 import Home from './screens/home.js' ;
 
-//stylishing the tab navigator
-const navigatorStyles = StyleSheet.create({
-  header: {
-    backgroundColor: 'black',
-    height: 80,
-  },
-});
-
 const SplitemApp = TabNavigator({
   Login: {screen: Login},
   Home: {screen: Home},
   }, {
-  tabBarPosition: 'bottom',
-  swipeEnable: true,
-  tabBarOptions: {
-    indicatorStyle: {
-      backgroundColor: 'red',
-      height: 45
+    navigationOptions: {
+      header: false,
     },
-    activeTintColor: 'white',
-    pressColor: 'white',
-    style: {
-      backgroundColor: '#a51d0d',
-      height: 45,
+    tabBarPosition: 'bottom',
+    swipeEnable: true,
+    tabBarOptions: {
+      indicatorStyle: {
+        backgroundColor: 'red',
+        height: 45
+      },
+      activeTintColor: 'white',
+      pressColor: 'white',
+      style: {
+        backgroundColor: '#a51d0d',
+        height: 45,
+      }
     }
-  }
 });
 
 const App = () => {

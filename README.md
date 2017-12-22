@@ -14,10 +14,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 * After you have set your development kit, you may install some components that aren't downloaded default from react-native.
 
-* Install _tabNavigation_ on source folder (_split_em_all/SplitemApp_):
+* Install [_tabNavigation_](https://reactnavigation.org/docs/navigators/tab) on source folder (_split_em_all/SplitemApp_):
 
 ```
 $ npm install --save react-navigation
+```
+
+* Install [_prop-types_](https://www.npmjs.com/package/prop-types) on source folder (_split_em_all/SplitemApp_):
+
+```
+$ npm install --save prop-types
 ```
 
 #### Android Virtual Machine

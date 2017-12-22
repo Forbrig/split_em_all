@@ -3,7 +3,7 @@ An open source app to split your expenses between your friends :fries: :pizza: :
 
 ### Keep an eye in the Progress:
 
-Nothing = _TODO_ 
+Nothing = _TODO_  
 Marked = _DOING_  
 Strikethrough = _DONE_  
 

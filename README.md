@@ -7,11 +7,11 @@ Nothing = _TODO_
 Marked = _DOING_  
 Strikethrough = _DONE_  
 
-- [x] Login (Frontend)
-- [ ] Signin (Frontend)
-- [ ] Home (Frontend)
-- [ ] Order (Frontend)
-- [ ] Food Menu (Frontend)
+- [x] Login
+- [ ] Signin
+- [ ] Home
+- [ ] Order
+- [ ] Food Menu
 - [ ] Database (Backend)
 
 ## Getting Started

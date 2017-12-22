@@ -7,7 +7,7 @@ Nothing = _TODO_
 Marked = _DOING_  
 Strikethrough = _DONE_  
 
-- [ ] Login (Frontend)
+- [x] Login (Frontend)
 - [ ] Signin (Frontend)
 - [ ] Home (Frontend)
 - [ ] Order (Frontend)

@@ -1,6 +1,19 @@
 # split_em_all
 An open source app to split your expenses between your friends :fries: :pizza: :beers:
 
+### Keep an eye in the Progress:
+
+Nothing = _TODO_ 
+Marked = _DOING_  
+Strikethrough = _DONE_  
+
+- [ ] Login (Frontend)
+- [ ] Signin (Frontend)
+- [ ] Home (Frontend)
+- [ ] Order (Frontend)
+- [ ] Food Menu (Frontend)
+- [ ] Database (Backend)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

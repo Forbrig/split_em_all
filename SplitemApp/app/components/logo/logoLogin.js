@@ -23,7 +23,7 @@ export default class LogoLogin extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: 10,
+		marginTop: 40,
 		alignItems: 'center',
 	},
 	image: {

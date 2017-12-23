@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator } from 'react-navigation';
 import {
   StyleSheet,
   View,
@@ -9,29 +9,42 @@ import {
 import Login from './screens/login.js' ;
 import Home from './screens/home.js' ;
 
-const SplitemApp = TabNavigator({
-  Login: {screen: Login},
-  Home: {screen: Home},
-  }, {
+const SplitemApp = StackNavigator({
+  Login: {
+    //hide stackbar on top of the screen
+    screen: Login,
     navigationOptions: {
       header: false,
     },
-    tabBarPosition: 'bottom',
-    swipeEnable: true,
-    tabBarOptions: {
-      indicatorStyle: {
-        backgroundColor: 'red',
-        height: 45
-      },
-      activeTintColor: 'white',
-      pressColor: 'white',
-      style: {
-        backgroundColor: '#a51d0d',
-        height: 45,
-      }
-    }
-});
+  },
 
+  /*Begin of tabNavigator (nested on StackNavigator), after login*/
+  LoggedInBundle: {
+    screen: TabNavigator({
+      Home: {
+        screen: Home
+      },
+    }, {
+      navigationOptions: {
+        header: true,
+      },
+      tabBarPosition: 'bottom',
+      swipeEnable: true,
+      tabBarOptions: {
+        indicatorStyle: {
+          backgroundColor: 'red',
+          height: 45
+        },
+        activeTintColor: 'white',
+        pressColor: 'white',
+        style: {
+          backgroundColor: '#a51d0d',
+          height: 45,
+        }
+      }
+    }),
+  },
+});
 const App = () => {
     return (
       <SplitemApp />

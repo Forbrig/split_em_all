@@ -15,19 +15,25 @@ import {
 } from '../configs/routes.js';
 
 export default class Login extends Component {
+  /*
+  Don`t need it anymore, tabNavigator is nested inside StackNavigator that contains this screen
   //hide navigation bar when in login screen
   static navigationOptions = {
     tabBarVisible: false
   };
+  */
 
   constructor(props) {
     super(props);
-    this.state = {username: ''};
-		this.state = {password: ''};
+    this.state = {
+      username: '',
+      password: '',
+    };
   }
 
   handleButtonLoginPress = () => {
-    Alert.alert('It work!')
+    //Alert.alert('It work!')
+    this.props.navigation.navigate('LoggedInBundle');
   }
 
   render() {
@@ -52,7 +58,7 @@ export default class Login extends Component {
           {this.state.password}
         </Text>
         */}
-        
+
         <View style = {styles.buttonLogin}>
           <CommonButton
             title = "Login"

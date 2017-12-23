@@ -9,7 +9,7 @@ Strikethrough = _DONE_
 
 - [x] Login
 - [ ] Signin
-- [ ] Home
+- [x] Home
 - [ ] Order
 - [ ] Food Menu
 - [ ] Database (Backend)

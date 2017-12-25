@@ -42,10 +42,12 @@ export default class Login extends Component {
         <LogoLogin />
         <View style = {styles.inputContainer}>
           <CommonInput
+            style = {styles.inputStyle}
             placeholder = "Login"
             onChangeText = {(username) => this.setState({username})}
           />
           <CommonInput
+            style = {styles.inputStyle}
             placeholder = "Password"
             secureTextEntry = {true}
             onChangeText = {(password) => this.setState({password})}
@@ -88,5 +90,12 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 4,
     borderWidth: 0.8,
+  },
+  inputStyle: {
+		marginTop: 5,
+		height: 40,
+		fontWeight: 'bold',
+    backgroundColor: 'white',
+    borderRadius: 5,
   },
 });

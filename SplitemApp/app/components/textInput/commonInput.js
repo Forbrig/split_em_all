@@ -9,10 +9,10 @@ import PropTypes from 'prop-types';
 //<KeyboardAvoidingView/> dont work properly with tabNavigator, a RN problem not fixed till today (20/12/2017)
 
 const CommonInput = (props) => {
-  const { underlineColorAndroid, placeholder, autoCapitalize, autoCorrect, secureTextEntry, onChangeText } = props;
+  const { style, underlineColorAndroid, placeholder, autoCapitalize, autoCorrect, secureTextEntry, onChangeText } = props;
   return (
 		<TextInput
-			style = {styles.defaultStyle}
+			style = {style}
 			underlineColorAndroid = {underlineColorAndroid}
 			secureTextEntry = {secureTextEntry}
 			placeholder = {placeholder}

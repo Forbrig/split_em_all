@@ -5,12 +5,12 @@ import {
   View
 } from 'react-native';
 
-export default class Home extends Component {
+export default class Settings extends Component {
   render() {
     return (
       <View style={styles.backgroundHome}>
         <Text>
-          "Home"
+          "Settings"
         </Text>
       </View>
     );

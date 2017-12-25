@@ -5,9 +5,11 @@ import {
   View,
 } from 'react-native';
 
- //path for the screens wich will be used in tabNavigator (I fucking love tabNavigator)
-import Login from './screens/login.js' ;
-import Home from './screens/home.js' ;
+ //path for the screens wich will be used in Navigator
+ import Login from './screens/login.js' ;
+ import Home from './screens/home.js';
+ import Profile from './screens/profile.js';
+ import Settings from './screens/settings.js';
 
 const SplitemApp = StackNavigator({
   Login: {
@@ -20,9 +22,16 @@ const SplitemApp = StackNavigator({
 
   /*Begin of tabNavigator (nested on StackNavigator), after login*/
   LoggedInBundle: {
-    screen: TabNavigator({
+    screen:
+    TabNavigator({
       Home: {
         screen: Home
+      },
+      Profile: {
+        screen: Profile
+      },
+      Settings: {
+        screen: Settings
       },
     }, {
       navigationOptions: {
@@ -45,6 +54,7 @@ const SplitemApp = StackNavigator({
     }),
   },
 });
+
 const App = () => {
     return (
       <SplitemApp />

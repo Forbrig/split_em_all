@@ -13,9 +13,6 @@ export default class LogoLogin extends Component {
 		return (
 			<View style = {styles.container}>
 				<Image source= {logoImage} style = {styles.image} />
-				<Text style = {styles.text}>
-					Split em All
-				</Text>
 			</View>
 		);
 	}
@@ -30,10 +27,4 @@ const styles = StyleSheet.create({
 		width: 300,
 		height: 300,
 	},
-	text: {
-		color: 'white',
-		fontWeight: 'bold',
-		backgroundColor: 'transparent',
-		marginTop: 10,
-	}
 });

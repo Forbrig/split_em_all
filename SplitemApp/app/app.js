@@ -6,7 +6,8 @@ import {
 } from 'react-native';
 
  //path for the screens wich will be used in Navigator
- import Login from './screens/login.js' ;
+ import Login from './screens/login.js';
+ import Signup from './screens/signup.js';
  import Home from './screens/home.js';
  import Profile from './screens/profile.js';
  import Settings from './screens/settings.js';
@@ -15,6 +16,12 @@ const SplitemApp = StackNavigator({
   Login: {
     //hide stackbar on top of the screen
     screen: Login,
+    navigationOptions: {
+      header: false,
+    },
+  },
+  Signup: {
+    screen: Signup,
     navigationOptions: {
       header: false,
     },

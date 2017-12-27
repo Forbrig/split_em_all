@@ -7,7 +7,7 @@ Nothing = _TODO_
 Marked = _DOING_  
 Strikethrough = _DONE_  
 
-- [x] Login
+- [x] ~~Login~~
 - [x] Signin
 - [x] Home
 - [ ] Profile
@@ -16,7 +16,7 @@ Strikethrough = _DONE_
 - [ ] AddData
 - [ ] AddData.Product
 - [ ] AddData.Subject
-- [ ] Database Funtions (Backend)
+- [ ] Database Functions (Backend)
 - [ ] Database Core (Backend)
 
 ## Getting Started

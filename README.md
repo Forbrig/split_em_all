@@ -8,11 +8,16 @@ Marked = _DOING_
 Strikethrough = _DONE_  
 
 - [x] Login
-- [ ] Signin
+- [x] Signin
 - [x] Home
+- [ ] Profile
 - [ ] Order
-- [ ] Food Menu
-- [ ] Database (Backend)
+- [ ] Order.InsertProduct
+- [ ] AddData
+- [ ] AddData.Product
+- [ ] AddData.Subject
+- [ ] Database Funtions (Backend)
+- [ ] Database Core (Backend)
 
 ## Getting Started
 
@@ -38,6 +43,13 @@ $ npm install --save react-navigation
 ```
 $ npm install --save prop-types
 ```
+
+* **Bonus:** You may add syntax highlight for [_ATOM_](https://atom.io/), [babel package](https://atom.io/packages/language-babel) is one that fits great.
+
+```
+$ apm install language-babel
+```
+Then in atom on the botton left click in the current language and select ``Babel ES6 Javascript``.
 
 #### Android Virtual Machine
 

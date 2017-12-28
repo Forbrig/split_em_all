@@ -72,7 +72,7 @@ export default class Login extends Component {
         <View style = {styles.buttonLogin}>
           <CommonButton
             title = "Login"
-            color = "#a51d0d"
+            color = "#840c00"
             onPress = {this.handleButtonLoginPress}
           />
         </View>
@@ -80,7 +80,7 @@ export default class Login extends Component {
           <Text style = {styles.signupText}> Don't have an account?</Text>
           <CommonButton
             style = {styles.signupText}
-            color = '#1b1f26'
+            color = "#16191e"
             title = "Sign up"
             onPress = {this.handleButtonSignupPress}
           />
@@ -92,9 +92,9 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
   backgroundLogin: {
+    backgroundColor: '#16191e',
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#1b1f26',
   },
   textLogo: {
 		color: 'white',

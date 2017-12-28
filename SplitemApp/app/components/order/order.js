@@ -29,5 +29,4 @@ CommonButton.defaultProps = {
 	onPress: null,
 	color: 'green',
 }
-
 export default CommonButton;

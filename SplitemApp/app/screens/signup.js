@@ -8,6 +8,7 @@ import {
 import {
   CommonButton,
   CommonInput,
+  HeaderTitle,
 } from '../configs/routes.js';
 
 export default class Signup extends Component {
@@ -17,6 +18,7 @@ export default class Signup extends Component {
       name: '',
       email: '',
       password: '',
+      confirmPassword: '',
     };
   }
 
@@ -31,59 +33,61 @@ export default class Signup extends Component {
 
   render() {
     return (
-      <View style={styles.backgroundSignup}>
-        <Text style = {{fontSize: 40, fontWeight: 'bold', alignItems: 'center', color: 'white', marginTop: 20}}>Register</Text>
-        <View style = {styles.inputContainer}>
-          <Text style = {styles.formTitle}>Full Name:</Text>
-          <CommonInput
-            style = {styles.inputStyle}
-            placeholder = "User Name"
-            onChangeText = {(username) => this.setState({username})}
-          />
-          <Text style = {styles.formTitle}>Email Adress:</Text>
-          <CommonInput
-            style = {styles.inputStyle}
-            placeholder = "user@email.com"
-            onChangeText = {(email) => this.setState({email})}
-          />
-          <Text style = {styles.formTitle}>Password:</Text>
-          <CommonInput
-            style = {styles.inputStyle}
-            placeholder = "***********"
-            secureTextEntry = {true}
-            onChangeText = {(password) => this.setState({password})}
-          />
-          <Text style = {styles.formTitle}>Confirm your Password:</Text>
-          <CommonInput
-            style = {styles.inputStyle}
-            placeholder = "***********"
-            secureTextEntry = {true}
-            onChangeText = {(confirmPassword) => this.setState({confirmPassword})}
-          />
-        </View>
+      <View style = {styles.headerBar}>
+        <HeaderTitle headerText = 'Register'/>
+        <View style = {styles.backgroundSignup}>
+          <View style = {styles.inputContainer}>
+            <Text style = {styles.formTitle}>Full Name:</Text>
+            <CommonInput
+              style = {styles.inputStyle}
+              placeholder = "User Name"
+              onChangeText = {(username) => this.setState({username})}
+            />
+            <Text style = {styles.formTitle}>Email Adress:</Text>
+            <CommonInput
+              style = {styles.inputStyle}
+              placeholder = "user@email.com"
+              onChangeText = {(email) => this.setState({email})}
+            />
+            <Text style = {styles.formTitle}>Password:</Text>
+            <CommonInput
+              style = {styles.inputStyle}
+              placeholder = "***********"
+              secureTextEntry = {true}
+              onChangeText = {(password) => this.setState({password})}
+            />
+            <Text style = {styles.formTitle}>Confirm your Password:</Text>
+            <CommonInput
+              style = {styles.inputStyle}
+              placeholder = "***********"
+              secureTextEntry = {true}
+              onChangeText = {(confirmPassword) => this.setState({confirmPassword})}
+            />
+          </View>
 
-        {/*
-        <Text>
-          {this.state.username + "\n"}
-          {this.state.password}
-        </Text>
-        */}
+          {/*
+          <Text>
+            {this.state.username + "\n"}
+            {this.state.password}
+          </Text>
+          */}
 
-        <View style = {styles.buttonSignup}>
-          <CommonButton
-            title = "Create Account"
-            color = "#a51d0d"
-            onPress = {this.handleButtonSigninPress}
-          />
-        </View>
-        <View style = {styles.returnToLoginContainer}>
-          <Text style = {styles.returnToLoginText}> Already registered?</Text>
-          <CommonButton
-            style = {styles.returnToLoginText}
-            color = '#1b1f26'
-            title = "Return to Login"
-            onPress = {this.handleButtonReturnLoginPress}
-          />
+          <View style = {styles.buttonSignup}>
+            <CommonButton
+              title = "Create Account"
+              color = "#840c00"
+              onPress = {this.handleButtonSigninPress}
+            />
+          </View>
+          <View style = {styles.returnToLoginContainer}>
+            <Text style = {styles.returnToLoginText}> Already registered?</Text>
+            <CommonButton
+              style = {styles.returnToLoginText}
+              color = '#16191e'
+              title = "Return to Login"
+              onPress = {this.handleButtonReturnLoginPress}
+            />
+          </View>
         </View>
       </View>
     );
@@ -91,14 +95,17 @@ export default class Signup extends Component {
 }
 
 const styles = StyleSheet.create({
+  headerBar: {
+    flexGrow: 1,
+  },
   backgroundSignup: {
     flex: 1,
+    backgroundColor: '#16191e',
     alignItems: 'center',
-    backgroundColor: '#1b1f26',
   },
   inputContainer: {
 		width: 300,
-		marginTop: 50,
+		marginTop: 20,
 	},
   formTitle: {
     marginTop: 15,

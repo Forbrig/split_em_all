@@ -54,7 +54,7 @@ const SplitemApp = StackNavigator({
         activeTintColor: 'white',
         pressColor: 'white',
         style: {
-          backgroundColor: '#a51d0d',
+          backgroundColor: '#840c00',
           height: 45,
         }
       }

@@ -69,18 +69,21 @@ export default class Login extends Component {
         </Text>
         */}
 
-        <View style = {styles.buttonLogin}>
-          <CommonButton
-            title = "Login"
-            color = "#840c00"
-            onPress = {this.handleButtonLoginPress}
-          />
-        </View>
+        <CommonButton
+          containerStyle = {styles.buttonLoginContainer}
+          textStyle = {styles.buttonLoginText}
+          title = "Login"
+          onPress = {this.handleButtonLoginPress}
+        />
+
+        {/*
+          containerStyle will inherit style.signupContainer
+        */}
+
         <View style = {styles.signupContainer}>
-          <Text style = {styles.signupText}> Don't have an account?</Text>
+          <Text style = {styles.signupText}>Don't have an account? </Text>
           <CommonButton
-            style = {styles.signupText}
-            color = "#16191e"
+            textStyle = {styles.signupText}
             title = "Sign up"
             onPress = {this.handleButtonSignupPress}
           />
@@ -108,17 +111,25 @@ const styles = StyleSheet.create({
 		width: 300,
 		marginTop: 30,
 	},
-  buttonLogin: {
-		width: 300,
-    marginTop: 20,
+  buttonLoginContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: "#ce1400",
+    width: 300,
     height: 40,
+    marginTop: 20,
     borderRadius: 4,
     borderWidth: 0.8,
+  },
+  buttonLoginText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
   signupContainer: {
     height: 20,
     backgroundColor: 'transparent',
-    marginTop: 2,
+    marginTop: 5,
     alignItems: 'center',
     flexDirection: 'row',
   },

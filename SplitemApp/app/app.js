@@ -48,7 +48,7 @@ const SplitemApp = StackNavigator({
       swipeEnable: true,
       tabBarOptions: {
         indicatorStyle: {
-          backgroundColor: 'red',
+          backgroundColor: '#ce1400',
           height: 45
         },
         activeTintColor: 'white',

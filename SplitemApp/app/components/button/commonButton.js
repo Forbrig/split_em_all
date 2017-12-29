@@ -1,33 +1,35 @@
 //note that default button has few layout animation options, for more options search for touchableOpacity
 
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import {
-	Button,
-	Alert,
+	TouchableOpacity,
+	Text,
+	StyleSheet,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
 const CommonButton = (props) => {
-  const { title, color, onPress } = props;
+  const { textStyle, containerStyle, title, onPress } = props;
   return (
-		<Button
-			title = {title}
-			color = {color}
+		<TouchableOpacity
+			style = {containerStyle}
 			onPress = {onPress}
-		/>
-  );
+		>
+			<Text style = {textStyle}>
+				{title}
+			</Text>
+		</TouchableOpacity>
+	);
 };
 
 CommonButton.propTypes = {
   title: PropTypes.string,
-	color: PropTypes.string,
   onPress: PropTypes.func,
 };
 
 CommonButton.defaultProps = {
 	title: 'Button Title',
 	onPress: null,
-	color: 'green',
-}
+};
 
 export default CommonButton;

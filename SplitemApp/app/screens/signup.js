@@ -68,22 +68,23 @@ export default class Signup extends Component {
           {/*
           <Text>
             {this.state.username + "\n"}
-            {this.state.password}
+            {this.state.email + "\n"}
+            {this.state.password + "\n"}
+            {this.state.confirmPassword}
           </Text>
           */}
 
-          <View style = {styles.buttonSignup}>
+          <CommonButton
+            containerStyle = {styles.buttonSigninContainer}
+            textStyle = {styles.buttonSigninText}
+            title = "Create Account"
+            onPress = {this.handleButtonSigninPress}
+          />
+
+          <View style = {styles.returnLoginContainer}>
+            <Text style = {styles.returnLoginText}>Already registered? </Text>
             <CommonButton
-              title = "Create Account"
-              color = "#840c00"
-              onPress = {this.handleButtonSigninPress}
-            />
-          </View>
-          <View style = {styles.returnToLoginContainer}>
-            <Text style = {styles.returnToLoginText}> Already registered?</Text>
-            <CommonButton
-              style = {styles.returnToLoginText}
-              color = '#16191e'
+              textStyle = {styles.returnLoginText}
               title = "Return to Login"
               onPress = {this.handleButtonReturnLoginPress}
             />
@@ -120,20 +121,29 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 5,
   },
-  buttonSignup: {
-		width: 300,
-    marginTop: 40,
+  buttonSigninContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: "#ce1400",
+    width: 300,
+    height: 40,
+    marginTop: 20,
     borderRadius: 4,
     borderWidth: 0.8,
   },
-  returnToLoginContainer: {
+  buttonSigninText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  returnLoginContainer: {
     height: 20,
     backgroundColor: 'transparent',
-    marginTop: 2,
+    marginTop: 5,
     alignItems: 'center',
     flexDirection: 'row',
   },
-  returnToLoginText: {
+  returnLoginText: {
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',

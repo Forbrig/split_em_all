@@ -47,17 +47,25 @@ const SplitemApp = StackNavigator({
       tabBarPosition: 'bottom',
       swipeEnable: true,
       tabBarOptions: {
+        activeTintColor: 'white',
+        inactiveTintColor: 'white',
+        pressColor: 'black',
         indicatorStyle: {
           backgroundColor: '#ce1400',
-          height: 45
+          height: 45,
         },
-        activeTintColor: 'white',
-        pressColor: 'white',
+        labelStyle: {
+          fontSize: 16,
+          fontWeight: 'bold',
+        },
+        headerTitleStyle: {
+          textAlign: 'center', alignSelf: 'center',
+        },
         style: {
           backgroundColor: '#840c00',
           height: 45,
-        }
-      }
+        },
+      },
     }),
   },
 });

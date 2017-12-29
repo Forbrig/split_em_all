@@ -8,7 +8,7 @@ Marked = _DOING_
 Strikethrough = _DONE_  
 
 - [x] ~~Login~~
-- [x] Signin
+- [x] ~~Signin~~
 - [x] Home
 - [ ] Profile
 - [ ] Order
@@ -18,6 +18,12 @@ Strikethrough = _DONE_
 - [ ] AddData.Subject
 - [ ] Database Functions (Backend)
 - [ ] Database Core (Backend)
+
+<p align="center">
+  <b>Current UI (2017-12-29):</b>
+  <br><br>
+  <img src="https://github.com/Forbrig/split_em_all/blob/master/UI%20state/2017-12-29.gif">
+</p>
 
 ## Getting Started
 
@@ -73,3 +79,8 @@ $ react-native run-android
 ## Authors
 
 * **Vitor G. Forbrig** - [Forbrig](https://github.com/Forbrig)
+
+## License
+
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

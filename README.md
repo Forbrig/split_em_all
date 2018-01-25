@@ -1,24 +1,6 @@
 # split_em_all
 An open source app to split your expenses between your friends :fries: :pizza: :beers:
 
-### Keep an eye in the Progress:
-
-Nothing = _TODO_  
-Marked = _DOING_  
-Strikethrough = _DONE_  
-
-- [x] ~~Login~~
-- [x] ~~Signin~~
-- [x] Home
-- [ ] Profile
-- [ ] Order
-- [ ] Order.InsertProduct
-- [ ] AddData
-- [ ] AddData.Product
-- [ ] AddData.Subject
-- [ ] Database Functions (Backend)
-- [ ] Database Core (Backend)
-
 <p align="center">
   <b>Current UI (2017-12-29):</b>
   <br><br>
